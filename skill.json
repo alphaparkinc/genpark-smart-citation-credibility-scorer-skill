@@ -1,0 +1,36 @@
+{
+  "name": "genpark-smart-citation-credibility-scorer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Academic smart citation context auditor classifying citations into supporting, disputing, or mentioning categories.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "service",
+  "tags": [
+    "scite-ai",
+    "citation-credibility",
+    "smart-citations",
+    "academic-audit",
+    "perplexity"
+  ],
+  "inputs": {
+    "paper_title": {
+      "type": "string"
+    },
+    "total_citations": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "credibility_audit_id": {
+      "type": "string"
+    },
+    "smart_citation_index": {
+      "type": "number"
+    },
+    "citation_badge": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
